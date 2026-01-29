@@ -1,0 +1,104 @@
+# Temporal Information Retrieval and Question Answering in the Age of LLMs
+
+**WWW 2026 Tutorial**  
+📅 April 13, 2026 | 📍 Dubai, UAE
+
+[![Tutorial Website](https://img.shields.io/badge/Website-Live-blue)](https://datascienceuibk.github.io/temporal-ir-qa-tutorial-www2025/)
+[![arXiv](https://img.shields.io/badge/arXiv-2505.20243-b31b1b.svg)](https://arxiv.org/abs/2505.20243)
+[![Video](https://img.shields.io/badge/Video-Teaser-red)](https://youtu.be/u5Ug8lj85jM)
+
+## Overview
+
+This tutorial provides a comprehensive introduction to **Temporal Information Retrieval (TIR)** and **Temporal Question Answering (TQA)** in the context of modern Large Language Models (LLMs). As information on the Web continuously evolves, understanding temporal dynamics in retrieval and QA systems is crucial for building effective AI applications.
+
+## Tutorial Website
+
+Visit our complete tutorial website: **[https://datascienceuibk.github.io/temporal-ir-qa-tutorial-www2025/](https://datascienceuibk.github.io/temporal-ir-qa-tutorial-www2025/)**
+
+## Key Topics
+
+- Fundamentals of Temporal Information Retrieval (TIR)
+- Temporal Question Answering (TQA) systems and architectures
+- Evolution from rule-based to probabilistic approaches
+- Modern transformer and LLM architectures for temporal reasoning
+- Temporal modeling and Retrieval-Augmented Generation (RAG)
+- Temporal reasoning over evolving knowledge
+- Recent advances and benchmarks in temporal IR/QA
+- Open challenges and future research directions
+
+## Tutorial Presenters
+
+### [Bhawna Piryani](https://bhawnapiryani.github.io/)
+**University of Innsbruck, Austria**  
+PhD Researcher in Data Science, specializing in temporal information retrieval and question answering.
+
+### [Avishek Anand](https://www.avishekanand.com/)
+**Delft University of Technology, Netherlands**  
+Associate Professor, expert in Retrieval-Augmented AI systems and temporal IR with over a decade of experience.
+
+### [Adam Jatowt](https://ds-informatik.uibk.ac.at/doku.php?id=homepage)
+**University of Innsbruck, Austria**  
+Professor and Deputy Head of the Digital Science Center, with 300+ publications in temporal IR and NLP.
+
+## Schedule
+
+**Duration:** Half-day tutorial (3 hours including breaks)
+
+1. **Introduction and Motivation** (20 min) - Adam Jatowt
+2. **Core Concepts and Temporal IR Tasks** (20 min) - Bhawna Piryani
+3. **Foundations: Pre-LLM Temporal IR Models** (25 min) - Avishek Anand
+4. **Neural and Transformer-based Temporal Models** (25 min) - Adam Jatowt
+5. **Quick Q&A** (10 min)
+6. **☕ Coffee Break** (10 min)
+7. **Temporal RAG and Reasoning** (30 min) - Avishek Anand
+8. **Temporal Web and Evaluation Ecosystem** (15 min) - Bhawna Piryani
+9. **Emerging Topics and Open Challenges** (10 min) - Adam Jatowt
+10. **Concluding Discussion and Q&A** (15 min) - All presenters
+
+## Resources
+
+- **Survey Paper:** [It's High Time: A Survey of Temporal Question Answering](https://arxiv.org/abs/2505.20243)
+- **Video Teaser:** [Watch on YouTube](https://youtu.be/u5Ug8lj85jM)
+- **Related Research:** [TemporalQA-Survey Repository](https://github.com/DataScienceUIBK/TemporalQA-Survey)
+- **TempWeb Workshop:** [temporalweb.net](https://temporalweb.net/)
+
+## Materials
+
+All tutorial materials including slides, code examples, and additional resources will be made available on the [tutorial website](https://datascienceuibk.github.io/temporal-ir-qa-tutorial-www2025/) before and after the tutorial.
+
+## Target Audience
+
+This tutorial is designed for:
+- Researchers in information retrieval and natural language processing
+- PhD students working on temporal reasoning and QA systems
+- Practitioners building LLM-based applications
+- Anyone interested in time-aware information access
+
+**Prerequisites:** Basic knowledge of NLP and machine learning concepts.
+
+## Contact
+
+For questions or inquiries about this tutorial, please contact:
+
+- 📧 Bhawna Piryani: [bhawna.piryani@uibk.ac.at](mailto:bhawna.piryani@uibk.ac.at)
+- 📧 Avishek Anand: [avishek.anand@tudelft.nl](mailto:avishek.anand@tudelft.nl)
+- 📧 Adam Jatowt: [adam.jatowt@uibk.ac.at](mailto:adam.jatowt@uibk.ac.at)
+
+## Citation
+
+If you find this tutorial useful, please cite our survey paper:
+
+```bibtex
+@article{piryani2025temporal,
+  title={It's High Time: A Survey of Temporal Question Answering},
+  author={Piryani, Bhawna and Abdallah, Abdelrahman and Mozafari, Jamshid and Anand, Avishek and Jatowt, Adam},
+  journal={arXiv preprint arXiv:2505.20243},
+  year={2025}
+}
+```
+
+---
+
+**Conference:** [The Web Conference 2026 (WWW 2026)](https://www2026.thewebconf.org/)  
+**Location:** Dubai, UAE  
+**Date:** April 13, 2026
