@@ -1,1 +1,424 @@
-hello
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temporal Information Retrieval and Question Answering in the Age of LLMs - WWW 2025 Tutorial</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f5f5;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background-color: white;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+        
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 60px 40px;
+            text-align: center;
+        }
+        
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+        
+        header .subtitle {
+            font-size: 1.3em;
+            margin-bottom: 10px;
+            opacity: 0.95;
+        }
+        
+        header .conference {
+            font-size: 1.1em;
+            opacity: 0.9;
+            margin-top: 20px;
+        }
+        
+        nav {
+            background-color: #2c3e50;
+            padding: 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        nav ul li {
+            margin: 0;
+        }
+        
+        nav ul li a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            padding: 15px 25px;
+            transition: background-color 0.3s;
+        }
+        
+        nav ul li a:hover {
+            background-color: #34495e;
+        }
+        
+        section {
+            padding: 50px 40px;
+            border-bottom: 1px solid #eee;
+        }
+        
+        section:last-child {
+            border-bottom: none;
+        }
+        
+        section h2 {
+            color: #667eea;
+            font-size: 2em;
+            margin-bottom: 25px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #667eea;
+        }
+        
+        section h3 {
+            color: #555;
+            font-size: 1.4em;
+            margin-top: 25px;
+            margin-bottom: 15px;
+        }
+        
+        section p, section ul {
+            margin-bottom: 15px;
+            font-size: 1.05em;
+            color: #555;
+        }
+        
+        section ul {
+            padding-left: 30px;
+        }
+        
+        section ul li {
+            margin-bottom: 10px;
+        }
+        
+        .highlight-box {
+            background-color: #f8f9fa;
+            border-left: 4px solid #667eea;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+        
+        .speaker-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+        }
+        
+        .speaker-card {
+            text-align: center;
+            padding: 20px;
+            background-color: #f8f9fa;
+            border-radius: 8px;
+            transition: transform 0.3s;
+        }
+        
+        .speaker-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .speaker-card h4 {
+            color: #667eea;
+            margin: 15px 0 5px 0;
+            font-size: 1.2em;
+        }
+        
+        .speaker-card p {
+            font-size: 0.95em;
+            color: #666;
+        }
+        
+        .schedule-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        
+        .schedule-table th,
+        .schedule-table td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        .schedule-table th {
+            background-color: #667eea;
+            color: white;
+            font-weight: 600;
+        }
+        
+        .schedule-table tr:hover {
+            background-color: #f8f9fa;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            background-color: #667eea;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 10px 10px 10px 0;
+            transition: background-color 0.3s;
+        }
+        
+        .btn:hover {
+            background-color: #5568d3;
+        }
+        
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 30px;
+            margin-top: 0;
+        }
+        
+        footer p {
+            color: white;
+        }
+        
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.8em;
+            }
+            
+            header .subtitle {
+                font-size: 1.1em;
+            }
+            
+            section {
+                padding: 30px 20px;
+            }
+            
+            nav ul {
+                flex-direction: column;
+            }
+            
+            nav ul li a {
+                border-bottom: 1px solid #34495e;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Temporal Information Retrieval and Question Answering in the Age of LLMs</h1>
+            <p class="subtitle">A Comprehensive Tutorial</p>
+            <p class="conference">WWW 2025 Conference | [Date] | [Location]</p>
+        </header>
+        
+        <nav>
+            <ul>
+                <li><a href="#overview">Overview</a></li>
+                <li><a href="#schedule">Schedule</a></li>
+                <li><a href="#materials">Materials</a></li>
+                <li><a href="#speakers">Speakers</a></li>
+                <li><a href="#resources">Resources</a></li>
+            </ul>
+        </nav>
+        
+        <section id="overview">
+            <h2>Tutorial Overview</h2>
+            <p>
+                This tutorial provides a comprehensive introduction to temporal information retrieval and question answering 
+                in the context of modern Large Language Models (LLMs). As information becomes increasingly time-sensitive, 
+                understanding temporal dynamics in retrieval and QA systems is crucial for building effective AI applications.
+            </p>
+            
+            <div class="highlight-box">
+                <h3>Key Topics Covered</h3>
+                <ul>
+                    <li>Fundamentals of temporal information retrieval</li>
+                    <li>Temporal question answering architectures</li>
+                    <li>Integrating temporal reasoning with LLMs</li>
+                    <li>Recent advances and benchmarks</li>
+                    <li>Real-world applications and case studies</li>
+                    <li>Challenges and future research directions</li>
+                </ul>
+            </div>
+            
+            <h3>Target Audience</h3>
+            <p>
+                This tutorial is designed for researchers, practitioners, and students interested in information retrieval, 
+                natural language processing, and large language models. Participants should have basic knowledge of NLP 
+                and machine learning concepts.
+            </p>
+            
+            <h3>Learning Outcomes</h3>
+            <p>After attending this tutorial, participants will be able to:</p>
+            <ul>
+                <li>Understand the unique challenges of temporal information retrieval</li>
+                <li>Design and implement temporal QA systems</li>
+                <li>Leverage LLMs for temporal reasoning tasks</li>
+                <li>Evaluate temporal IR and QA systems using standard benchmarks</li>
+                <li>Identify promising research directions in this area</li>
+            </ul>
+        </section>
+        
+        <section id="schedule">
+            <h2>Schedule</h2>
+            <p><em>Duration: Half-day tutorial (3.5 hours)</em></p>
+            
+            <table class="schedule-table">
+                <thead>
+                    <tr>
+                        <th>Time</th>
+                        <th>Topic</th>
+                        <th>Speaker</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>9:00 - 9:15</td>
+                        <td>Introduction and Motivation</td>
+                        <td>Speaker 1</td>
+                    </tr>
+                    <tr>
+                        <td>9:15 - 10:00</td>
+                        <td>Fundamentals of Temporal Information Retrieval</td>
+                        <td>Speaker 2</td>
+                    </tr>
+                    <tr>
+                        <td>10:00 - 10:30</td>
+                        <td>Coffee Break</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>10:30 - 11:15</td>
+                        <td>Temporal Question Answering Systems</td>
+                        <td>Speaker 3</td>
+                    </tr>
+                    <tr>
+                        <td>11:15 - 12:00</td>
+                        <td>LLMs for Temporal Reasoning</td>
+                        <td>Speaker 1</td>
+                    </tr>
+                    <tr>
+                        <td>12:00 - 12:30</td>
+                        <td>Hands-on Demo and Q&A</td>
+                        <td>All Speakers</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        
+        <section id="materials">
+            <h2>Materials</h2>
+            <p>All tutorial materials will be made available here before and after the tutorial.</p>
+            
+            <h3>Slides</h3>
+            <p>
+                <a href="#" class="btn">Part 1: Introduction (Coming Soon)</a>
+                <a href="#" class="btn">Part 2: Temporal IR (Coming Soon)</a>
+                <a href="#" class="btn">Part 3: Temporal QA (Coming Soon)</a>
+                <a href="#" class="btn">Part 4: LLMs & Applications (Coming Soon)</a>
+            </p>
+            
+            <h3>Code & Notebooks</h3>
+            <p>
+                <a href="#" class="btn">GitHub Repository (Coming Soon)</a>
+                <a href="#" class="btn">Colab Notebooks (Coming Soon)</a>
+            </p>
+            
+            <h3>Datasets & Benchmarks</h3>
+            <ul>
+                <li>TemporalQuestions Dataset</li>
+                <li>TimeQA Benchmark</li>
+                <li>TempWeb Corpus</li>
+                <li>Additional resources and links will be added here</li>
+            </ul>
+        </section>
+        
+        <section id="speakers">
+            <h2>Tutorial Speakers</h2>
+            
+            <div class="speaker-grid">
+                <div class="speaker-card">
+                    <h4>Speaker Name 1</h4>
+                    <p>Affiliation</p>
+                    <p>Brief bio and research interests. Add links to homepage or Google Scholar.</p>
+                </div>
+                
+                <div class="speaker-card">
+                    <h4>Speaker Name 2</h4>
+                    <p>Affiliation</p>
+                    <p>Brief bio and research interests. Add links to homepage or Google Scholar.</p>
+                </div>
+                
+                <div class="speaker-card">
+                    <h4>Speaker Name 3</h4>
+                    <p>Affiliation</p>
+                    <p>Brief bio and research interests. Add links to homepage or Google Scholar.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="resources">
+            <h2>Additional Resources</h2>
+            
+            <h3>Key Papers</h3>
+            <ul>
+                <li>Paper 1 Title - Authors (Conference/Journal, Year)</li>
+                <li>Paper 2 Title - Authors (Conference/Journal, Year)</li>
+                <li>Paper 3 Title - Authors (Conference/Journal, Year)</li>
+                <li>Add more relevant papers here</li>
+            </ul>
+            
+            <h3>Related Tutorials & Surveys</h3>
+            <ul>
+                <li>Link to related tutorial 1</li>
+                <li>Link to related tutorial 2</li>
+                <li>Link to survey papers</li>
+            </ul>
+            
+            <h3>Useful Tools & Libraries</h3>
+            <ul>
+                <li>Temporal reasoning libraries</li>
+                <li>LLM frameworks</li>
+                <li>Evaluation toolkits</li>
+            </ul>
+            
+            <h3>Contact</h3>
+            <p>For questions or inquiries about this tutorial, please contact:</p>
+            <p>Email: <a href="mailto:your-email@example.com">your-email@example.com</a></p>
+        </section>
+        
+        <footer>
+            <p>&copy; 2025 WWW Conference Tutorial | Temporal IR & QA in the Age of LLMs</p>
+            <p>Last updated: January 2025</p>
+        </footer>
+    </div>
+</body>
+</html>
