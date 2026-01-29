@@ -36,6 +36,7 @@
             font-size: 2.5em;
             margin-bottom: 15px;
             font-weight: 700;
+            line-height: 1.2;
         }
         
         header .subtitle {
@@ -119,12 +120,69 @@
             margin-bottom: 10px;
         }
         
+        .abstract-box {
+            background-color: #f8f9fa;
+            border-left: 4px solid #667eea;
+            padding: 25px;
+            margin: 25px 0;
+            border-radius: 4px;
+            font-size: 1.05em;
+            line-height: 1.8;
+            text-align: justify;
+        }
+        
         .highlight-box {
             background-color: #f8f9fa;
             border-left: 4px solid #667eea;
             padding: 20px;
             margin: 20px 0;
             border-radius: 4px;
+        }
+        
+        .schedule-item {
+            background-color: #fff;
+            border-left: 4px solid #667eea;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 4px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        
+        .schedule-item h3 {
+            color: #667eea;
+            margin-top: 0;
+            margin-bottom: 10px;
+            font-size: 1.3em;
+        }
+        
+        .schedule-item .presenter {
+            color: #764ba2;
+            font-size: 1.05em;
+            margin-bottom: 10px;
+        }
+        
+        .schedule-item ul {
+            margin-top: 10px;
+        }
+        
+        .schedule-break {
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            border-left: 4px solid #95a5a6;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 4px;
+            text-align: center;
+        }
+        
+        .schedule-break h3 {
+            color: #555;
+            margin: 0 0 10px 0;
+        }
+        
+        .schedule-break p {
+            color: #666;
+            margin: 0;
+            font-style: italic;
         }
         
         .speaker-grid {
@@ -147,10 +205,30 @@
             box-shadow: 0 5px 15px rgba(0,0,0,0.1);
         }
         
+        .speaker-card img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 15px;
+            border: 3px solid #667eea;
+        }
+        
         .speaker-card h4 {
             color: #667eea;
             margin: 15px 0 5px 0;
             font-size: 1.2em;
+        }
+        
+        .speaker-card h4 a {
+            color: #667eea;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .speaker-card h4 a:hover {
+            color: #764ba2;
+            text-decoration: underline;
         }
         
         .speaker-card p {
@@ -158,27 +236,14 @@
             color: #666;
         }
         
-        .schedule-table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 20px;
+        .speaker-card a {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 500;
         }
         
-        .schedule-table th,
-        .schedule-table td {
-            padding: 15px;
-            text-align: left;
-            border-bottom: 1px solid #ddd;
-        }
-        
-        .schedule-table th {
-            background-color: #667eea;
-            color: white;
-            font-weight: 600;
-        }
-        
-        .schedule-table tr:hover {
-            background-color: #f8f9fa;
+        .speaker-card a:hover {
+            text-decoration: underline;
         }
         
         .btn {
@@ -194,6 +259,15 @@
         
         .btn:hover {
             background-color: #5568d3;
+        }
+        
+        section a {
+            color: #667eea;
+            text-decoration: none;
+        }
+        
+        section a:hover {
+            text-decoration: underline;
         }
         
         footer {
@@ -426,31 +500,26 @@
                 <a href="https://arxiv.org/abs/2505.20243" target="_blank" class="btn">Survey Paper on arXiv</a>
             </p>
             
-        </section>
-        
-       <section id="speakers">
+        <section id="speakers">
             <h2>Tutorial Speakers</h2>
             
             <div class="speaker-grid">
                 <div class="speaker-card">
                     <img src="pictures/bhawna-piryani.png" alt="Bhawna Piryani">
-                    <h4>Bhawna Piryani</h4>
+                    <h4><a href="https://bhawnapiryani.github.io/" target="_blank">Bhawna Piryani</a></h4>
                     <p><strong>University of Innsbruck, Austria</strong></p>
-                    <p><a href="https://bhawnapiryani.github.io/" target="_blank">Website</a></p>
                 </div>
                 
                 <div class="speaker-card">
                     <img src="pictures/avishek-anand.webp" alt="Avishek Anand">
-                    <h4>Avishek Anand</h4>
+                    <h4><a href="https://www.avishekanand.com/" target="_blank">Avishek Anand</a></h4>
                     <p><strong>Delft University of Technology, Netherlands</strong></p>
-                    <p><a href="https://www.avishekanand.com/" target="_blank">Website</a></p>
                 </div>
                 
                 <div class="speaker-card">
                     <img src="pictures/adam-jatowt.jpg" alt="Adam Jatowt">
-                    <h4>Adam Jatowt</h4>
+                    <h4><a href="https://ds-informatik.uibk.ac.at/doku.php?id=homepage" target="_blank">Adam Jatowt</a></h4>
                     <p><strong>University of Innsbruck, Austria</strong></p>
-                    <p><a href="https://ds-informatik.uibk.ac.at/doku.php?id=homepage" target="_blank">Website</a></p>
                 </div>
             </div>
         </section>
