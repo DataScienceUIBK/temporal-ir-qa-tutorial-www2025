@@ -44,16 +44,16 @@ Professor and Deputy Head of the Digital Science Center, with 300+ publications 
 
 **Duration:** Half-day tutorial (3 hours including breaks)
 
-1. **Introduction and Motivation** (20 min) - Adam Jatowt
-2. **Core Concepts and Temporal IR Tasks** (20 min) - Bhawna Piryani
-3. **Foundations: Pre-LLM Temporal IR Models** (25 min) - Avishek Anand
-4. **Neural and Transformer-based Temporal Models** (25 min) - Adam Jatowt
-5. **Quick Q&A** (10 min)
-6. **☕ Coffee Break** (10 min)
-7. **Temporal RAG and Reasoning** (30 min) - Avishek Anand
-8. **Temporal Web and Evaluation Ecosystem** (15 min) - Bhawna Piryani
-9. **Emerging Topics and Open Challenges** (10 min) - Adam Jatowt
-10. **Concluding Discussion and Q&A** (15 min) - All presenters
+1. **Introduction and Motivation**  
+2. **Core Concepts and Temporal IR Tasks** 
+3. **Foundations: Pre-LLM Temporal IR Models** 
+4. **Neural and Transformer-based Temporal Models** 
+5. **Quick Q&A** 
+6. **☕ Coffee Break** 
+7. **Temporal RAG and Reasoning** 
+8. **Temporal Web and Evaluation Ecosystem** 
+9. **Emerging Topics and Open Challenges** 
+10. **Concluding Discussion and Q&A**
 
 ## Resources
 
