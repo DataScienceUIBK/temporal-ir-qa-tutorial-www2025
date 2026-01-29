@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Temporal Information Retrieval and Question Answering in the Age of LLMs - WWW 2025 Tutorial</title>
+    <title>Temporal Information Retrieval and Question Answering in the Age of LLMs - WWW 2026 Tutorial</title>
     <style>
         * {
             margin: 0;
@@ -236,7 +236,7 @@
         <header>
             <h1>Temporal Information Retrieval and Question Answering in the Age of LLMs</h1>
             <p class="subtitle">A Comprehensive Tutorial</p>
-            <p class="conference">WWW 2025 Conference | [Date] | [Location]</p>
+            <p class="conference">WWW 2026 Conference | [13 April, 2026] | [Dubai, UAE]</p>
         </header>
         
         <nav>
@@ -251,139 +251,147 @@
         
         <section id="overview">
             <h2>Tutorial Overview</h2>
-            <p>
-                This tutorial provides a comprehensive introduction to temporal information retrieval and question answering 
-                in the context of modern Large Language Models (LLMs). As information becomes increasingly time-sensitive, 
-                understanding temporal dynamics in retrieval and QA systems is crucial for building effective AI applications.
-            </p>
             
             <div class="highlight-box">
                 <h3>Key Topics Covered</h3>
                 <ul>
-                    <li>Fundamentals of temporal information retrieval</li>
-                    <li>Temporal question answering architectures</li>
-                    <li>Integrating temporal reasoning with LLMs</li>
-                    <li>Recent advances and benchmarks</li>
-                    <li>Real-world applications and case studies</li>
-                    <li>Challenges and future research directions</li>
+                    <li>Fundamentals of Temporal Information Retrieval (TIR)</li>
+                    <li>Temporal Question Answering (TQA) systems and architectures</li>
+                    <li>Evolution from rule-based to probabilistic approaches</li>
+                    <li>Modern transformer and LLM architectures for temporal reasoning</li>
+                    <li>Temporal modeling and Retrieval-Augmented Generation (RAG)</li>
+                    <li>Temporal reasoning over evolving knowledge</li>
+                    <li>Recent advances and benchmarks in temporal IR/QA</li>
+                    <li>Open challenges and future research directions</li>
                 </ul>
             </div>
             
             <h3>Target Audience</h3>
             <p>
-                This tutorial is designed for researchers, practitioners, and students interested in information retrieval, 
-                natural language processing, and large language models. Participants should have basic knowledge of NLP 
-                and machine learning concepts.
+                This tutorial is designed for researchers, practitioners, and graduate students interested in information retrieval, 
+                natural language processing, question answering, and large language models. Participants should have basic knowledge 
+                of NLP and machine learning concepts.
             </p>
             
             <h3>Learning Outcomes</h3>
             <p>After attending this tutorial, participants will be able to:</p>
             <ul>
-                <li>Understand the unique challenges of temporal information retrieval</li>
-                <li>Design and implement temporal QA systems</li>
-                <li>Leverage LLMs for temporal reasoning tasks</li>
+                <li>Understand the unique challenges of temporal information retrieval and question answering</li>
+                <li>Trace the evolution of temporal methods from classical to modern LLM-based approaches</li>
+                <li>Design and implement temporal QA systems using state-of-the-art techniques</li>
+                <li>Leverage LLMs and RAG for temporal reasoning tasks</li>
                 <li>Evaluate temporal IR and QA systems using standard benchmarks</li>
-                <li>Identify promising research directions in this area</li>
+                <li>Identify promising research directions and open challenges in temporal information access</li>
             </ul>
         </section>
+    
         
         <section id="schedule">
             <h2>Schedule</h2>
-            <p><em>Duration: Half-day tutorial (3.5 hours)</em></p>
+            <p><em>Duration: Half-day tutorial</em></p>
             
-            <table class="schedule-table">
-                <thead>
-                    <tr>
-                        <th>Time</th>
-                        <th>Topic</th>
-                        <th>Speaker</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>9:00 - 9:15</td>
-                        <td>Introduction and Motivation</td>
-                        <td>Speaker 1</td>
-                    </tr>
-                    <tr>
-                        <td>9:15 - 10:00</td>
-                        <td>Fundamentals of Temporal Information Retrieval</td>
-                        <td>Speaker 2</td>
-                    </tr>
-                    <tr>
-                        <td>10:00 - 10:30</td>
-                        <td>Coffee Break</td>
-                        <td>-</td>
-                    </tr>
-                    <tr>
-                        <td>10:30 - 11:15</td>
-                        <td>Temporal Question Answering Systems</td>
-                        <td>Speaker 3</td>
-                    </tr>
-                    <tr>
-                        <td>11:15 - 12:00</td>
-                        <td>LLMs for Temporal Reasoning</td>
-                        <td>Speaker 1</td>
-                    </tr>
-                    <tr>
-                        <td>12:00 - 12:30</td>
-                        <td>Hands-on Demo and Q&A</td>
-                        <td>All Speakers</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
+            <div class="schedule-item">
+                <h3>1. Introduction and Motivation (20 min)</h3>
+                <p><strong>Goal:</strong> Establish why time is a fundamental dimension in information access.</p>
+                <ul>
+                    <li>Why time matters in IR and QA: recency, evolution, factual decay</li>
+                    <li>Key challenges: knowledge volatility, temporal ambiguity, context shift</li>
+                    <li>Core definitions and taxonomy of temporal IR and QA</li>
+                </ul>
+            </div>
+            
+            <div class="schedule-item">
+                <h3>2. Core Concepts and Temporal IR Tasks (20 min)</h3>
+                <p><strong>Goal:</strong> Introduce canonical temporal tasks and benchmarks.</p>
+                <ul>
+                    <li>Temporal intent detection, document dating, focus time estimation</li>
+                    <li>Temporal granularity and temporal query understanding</li>
+                    <li>Benchmark overview: design and evaluation paradigms</li>
+                </ul>
+            </div>
+            
+            <div class="schedule-item">
+                <h3>3. Foundations: Pre-LLM Temporal IR Models (25 min)</h3>
+                <p><strong>Goal:</strong> Review classical methods prior to the neural era.</p>
+                <ul>
+                    <li>Rule-based, statistical, and temporal language modeling approaches</li>
+                    <li>Frameworks for temporal annotation and normalization</li>
+                    <li>Temporal indexing and ranking strategies</li>
+                </ul>
+            </div>
+            
+            <div class="schedule-item">
+                <h3>4. Neural and Transformer-based Temporal Models (25 min)</h3>
+                <p><strong>Goal:</strong> Explain the evolution of temporal representation learning.</p>
+                <ul>
+                    <li>Temporal language models</li>
+                    <li>Temporal adaptation, continual learning, and timestamp conditioning</li>
+                    <li>How neural encoders capture or forget temporal signals</li>
+                </ul>
+            </div>
+            
+            <div class="schedule-item">
+                <h3>Quick Q&A (10 min)</h3>
+                <p class="presenter"><strong>All presenters</strong></p>
+                <p>Clarify foundational concepts and prepare participants for the RAG and reasoning sections.</p>
+            </div>
+            
+            <div class="schedule-break">
+                <h3>☕ Coffee Break (10 min)</h3>
+                <p>Informal networking and discussion</p>
+            </div>
         
         <section id="materials">
             <h2>Materials</h2>
             <p>All tutorial materials will be made available here before and after the tutorial.</p>
             
+            <h3>Video Teaser</h3>
+            <p>
+                <a href="https://youtu.be/u5Ug8lj85jM" target="_blank" class="btn">Watch Video Teaser</a>
+            </p>
+            
             <h3>Slides</h3>
             <p>
-                <a href="#" class="btn">Part 1: Introduction (Coming Soon)</a>
-                <a href="#" class="btn">Part 2: Temporal IR (Coming Soon)</a>
-                <a href="#" class="btn">Part 3: Temporal QA (Coming Soon)</a>
-                <a href="#" class="btn">Part 4: LLMs & Applications (Coming Soon)</a>
+                <a href="#" class="btn">Part 1: Introduction & Motivation (Coming Soon)</a>
+                <a href="#" class="btn">Part 2: Core Concepts & Temporal IR Tasks (Coming Soon)</a>
+                <a href="#" class="btn">Part 3: Pre-LLM Temporal IR Models (Coming Soon)</a>
+                <a href="#" class="btn">Part 4: Neural & Transformer-based Models (Coming Soon)</a>
+                <a href="#" class="btn">Part 5: Temporal RAG & Reasoning (Coming Soon)</a>
+                <a href="#" class="btn">Part 6: Temporal Web & Evaluation (Coming Soon)</a>
+                <a href="#" class="btn">Part 7: Emerging Topics (Coming Soon)</a>
             </p>
             
-            <h3>Code & Notebooks</h3>
+            <h3>Survey Paper</h3>
             <p>
-                <a href="#" class="btn">GitHub Repository (Coming Soon)</a>
-                <a href="#" class="btn">Colab Notebooks (Coming Soon)</a>
+                <a href="https://arxiv.org/abs/2505.20243" target="_blank" class="btn">Survey Paper on arXiv</a>
             </p>
             
-            <h3>Datasets & Benchmarks</h3>
-            <ul>
-                <li>TemporalQuestions Dataset</li>
-                <li>TimeQA Benchmark</li>
-                <li>TempWeb Corpus</li>
-                <li>Additional resources and links will be added here</li>
-            </ul>
         </section>
         
-        <section id="speakers">
+       <section id="speakers">
             <h2>Tutorial Speakers</h2>
             
             <div class="speaker-grid">
                 <div class="speaker-card">
-                    <h4>Speaker Name 1</h4>
-                    <p>Affiliation</p>
-                    <p>Brief bio and research interests. Add links to homepage or Google Scholar.</p>
+                    <h4>Bhawna Piryani</h4>
+                    <p><strong>University of Innsbruck, Austria</strong></p>
+                    <p><a href="https://bhawnapiryani.github.io/" target="_blank">Website</a></p>
                 </div>
                 
                 <div class="speaker-card">
-                    <h4>Speaker Name 2</h4>
-                    <p>Affiliation</p>
-                    <p>Brief bio and research interests. Add links to homepage or Google Scholar.</p>
+                    <h4>Avishek Anand</h4>
+                    <p><strong>Delft University of Technology, Netherlands</strong></p>
+                    <p><a href="https://www.avishekanand.com/" target="_blank">Website</a></p>
                 </div>
                 
                 <div class="speaker-card">
-                    <h4>Speaker Name 3</h4>
-                    <p>Affiliation</p>
-                    <p>Brief bio and research interests. Add links to homepage or Google Scholar.</p>
+                    <h4>Adam Jatowt</h4>
+                    <p><strong>University of Innsbruck, Austria</strong></p>
+                    <p><a href="https://ds-informatik.uibk.ac.at/doku.php?id=homepage" target="_blank">Website</a></p>
                 </div>
             </div>
         </section>
+        
         
         <section id="resources">
             <h2>Additional Resources</h2>
@@ -412,11 +420,15 @@
             
             <h3>Contact</h3>
             <p>For questions or inquiries about this tutorial, please contact:</p>
-            <p>Email: <a href="mailto:your-email@example.com">your-email@example.com</a></p>
+            <p>
+                📧 <a href="mailto:bhawna.piryani@uibk.ac.at">bhawna.piryani@uibk.ac.at</a> (Bhawna Piryani)<br>
+                📧 <a href="mailto:avishek.anand@tudelft.nl">avishek.anand@tudelft.nl</a> (Avishek Anand)<br>
+                📧 <a href="mailto:adam.jatowt@uibk.ac.at">adam.jatowt@uibk.ac.at</a> (Adam Jatowt)
+            </p>
         </section>
         
         <footer>
-            <p>&copy; 2025 WWW Conference Tutorial | Temporal IR & QA in the Age of LLMs</p>
+            <p>&copy; 2026 WWW Conference Tutorial | Temporal IR & QA in the Age of LLMs</p>
             <p>Last updated: January 2025</p>
         </footer>
     </div>
