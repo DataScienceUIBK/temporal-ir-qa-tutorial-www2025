@@ -60,7 +60,6 @@ Professor and Deputy Head of the Digital Science Center, with 300+ publications 
 - **Survey Paper:** [It's High Time: A Survey of Temporal Question Answering](https://arxiv.org/abs/2505.20243)
 - **Video Teaser:** [Watch on YouTube](https://youtu.be/u5Ug8lj85jM)
 - **Related Research:** [TemporalQA-Survey Repository](https://github.com/DataScienceUIBK/TemporalQA-Survey)
-- **TempWeb Workshop:** [temporalweb.net](https://temporalweb.net/)
 
 ## Materials
 
